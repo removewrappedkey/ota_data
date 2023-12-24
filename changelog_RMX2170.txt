@@ -1,1 +1,62 @@
-Initial test
+Note:
+- Disable windows blur for more smoother experience
+
+[#mellolab] (Changes other than derpfest):
+- Redesigned some UI elements
+- PowerUsageSummary: open advanced usage on header click
+- Use seekbar to allow setting animation values
+- Show battery temp in battery settings
+- Added more battery health stuffs in battery settings
+- Added lottie animations in settings
+- derpspace is the lab 
+- Allow using 4G icon instead LTE
+- Tune QS tile dimensions to be more rounded
+- Remove shadows from elements like clock, charging etc on lockscreen
+- Redesign volume panel layout
+- Update battery info every second when device is charging
+- Disable blur wakeup animation
+- Hide oos clear all if reticker enable
+- Move brightness slider icon to the left
+- Improve power menu
+- Redesign and animate Battery and storage progress bars like oos with monet colors
+- Redesign caffeine QS tile
+- AdvancedReboot: Add a button to restart SystemUI
+- Replace with Fluent Design-inspired animation
+- Increase collapsing toolbar height more
+- Make keyguard elements follow clock font
+- Tweak navigation bar handle to be semi-transparent
+- Update reticker specs to latest OneUI brief pop up style
+- Introduce PowerOffAlarmService with notification
+- AuthRippleView: Less Boring Dwell Ripple
+- Match systemui dialogs background with power menu
+- Improve ripple animation color
+- Add charging icon to the charging animation
+- Conditionally force enable LTE_CA
+- fixup! screenshot ui sound not playing after updating
+- Fix QS columns/row customizations for large screen devices
+- Adapt privacy indicator chip for light/dark theme
+- Implement transition boosting
+- Implement Seekbar UI changes
+- Use App icon for per-app volume
+- Long press per-app volume icon functionality
+- VolumePanel: Add long click for expand icon
+- Double tap to wake on doze
+- Fix for mic disabled due to dt2w
+- Properly add and fix double tap to sleep gesture
+- Boost gesture flings
+- Compile for performance
+- Disable flash messages
+- Implement Split notification shade changes
+- Do not reset keyguard going away state
+- Added LockscreenCharging
+- LockscreenCharging: Calculate power from voltage and current
+- LockscreenCharging: hardcode for calculation for device having 2 batteries (like realme 7 pro)
+- Add Brightness TextView
+- Implement background process killer
+- Change collapse mode to scale
+- Redesign Permission grant dialog
+- Permission dialog: Apply material you design
+- PermissionController: Apply google material you palette
+- Fixes for nothingdot font along with two nothingdot font (one just for headings and another one system wide)
+
+- kernel: Merged latest linux patch v4.14.331
