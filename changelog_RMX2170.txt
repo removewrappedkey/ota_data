@@ -1,62 +1,57 @@
 Note:
 - Disable windows blur for more smoother experience
 
-[#mellolab] (Changes other than derpfest):
-- Redesigned some UI elements
-- PowerUsageSummary: open advanced usage on header click
-- Use seekbar to allow setting animation values
-- Show battery temp in battery settings
-- Added more battery health stuffs in battery settings
-- Added lottie animations in settings
-- derpspace is the lab 
-- Allow using 4G icon instead LTE
-- Tune QS tile dimensions to be more rounded
-- Remove shadows from elements like clock, charging etc on lockscreen
-- Redesign volume panel layout
-- Update battery info every second when device is charging
-- Disable blur wakeup animation
-- Hide oos clear all if reticker enable
-- Move brightness slider icon to the left
-- Improve power menu
-- Redesign and animate Battery and storage progress bars like oos with monet colors
-- Redesign caffeine QS tile
-- AdvancedReboot: Add a button to restart SystemUI
-- Replace with Fluent Design-inspired animation
-- Increase collapsing toolbar height more
-- Make keyguard elements follow clock font
-- Tweak navigation bar handle to be semi-transparent
-- Update reticker specs to latest OneUI brief pop up style
-- Introduce PowerOffAlarmService with notification
-- AuthRippleView: Less Boring Dwell Ripple
-- Match systemui dialogs background with power menu
-- Improve ripple animation color
-- Add charging icon to the charging animation
-- Conditionally force enable LTE_CA
-- fixup! screenshot ui sound not playing after updating
-- Fix QS columns/row customizations for large screen devices
-- Adapt privacy indicator chip for light/dark theme
-- Implement transition boosting
-- Implement Seekbar UI changes
-- Use App icon for per-app volume
-- Long press per-app volume icon functionality
-- VolumePanel: Add long click for expand icon
-- Double tap to wake on doze
-- Fix for mic disabled due to dt2w
-- Properly add and fix double tap to sleep gesture
-- Boost gesture flings
-- Compile for performance
-- Disable flash messages
-- Implement Split notification shade changes
-- Do not reset keyguard going away state
-- Added LockscreenCharging
-- LockscreenCharging: Calculate power from voltage and current
-- LockscreenCharging: hardcode for calculation for device having 2 batteries (like realme 7 pro)
-- Add Brightness TextView
-- Implement background process killer
-- Change collapse mode to scale
-- Redesign Permission grant dialog
-- Permission dialog: Apply material you design
-- PermissionController: Apply google material you palette
-- Fixes for nothingdot font along with two nothingdot font (one just for headings and another one system wide)
+[DEVICE]
+- kernel: Merged latest linux patch v4.14.332
+- Boost scheduler during interaction
+- audio: Fix "Earpiece" audio output
 
-- kernel: Merged latest linux patch v4.14.331
+[#melloderp] (Changes other than derpfest)
+- Hide ADB and developer setting enable status
+- Spoof current storage encryption status
+- Add support for application downgrade
+- Fix activity not finishing even after pressing back key
+- Default to 0 compression ratio
+- NotificationShade: Make blur crossfading more gradual
+- Show icon of package associated with Toast
+- Match legacy toast view with SystemUI
+- Tune AOSP QS Panel components and paddings
+- Added smart pixels under battery saver along with it's tile
+- Added a delete button to reset battery stats
+- Allow locking tasks to recents
+- Don't animate screen brightness when turning the screen on
+- Remove Unicode whitespace before AM/PM in the status bar
+- HWUI: move onSurfaceStatsAvailable to renderthread
+- Don't enable extra StrictMode features for userdebug builds
+- Fix system bootloop when no IME found
+- Granted many missing system permissions
+- Make freeform windows rounded
+- [WIP] Spoof locked bootloader on local attestations
+- Some UI changes
+- Settings: add animation to dark mode preference
+- Update sound, storage and charging illustration
+- Added MelloLauncher (former DerpLauncher)
+- More here ane there changes, I cannot mention
+
+Changes from DerpLauncher:
+- Introduce memory info in recents app overview
+- Add toggle for memory info view
+- Introduce overview scrolling scale animation
+- Add Toasts for Apps Cleared
+- Add background chip for memory info view
+- Rework and optimize memory info
+- Open running services activity when clicking meminfo view
+- Vibrate effect for clear all button
+- Rework MeminfoView available ram calculation
+- Properly end recents animation views
+- Make recents rounded for devices without round screen
+- Vibrate on double tap to sleep
+- Rework recent apps UI/UX for QPR1
+- Allow locking tasks to recents
+- Redesigned and revamped recents screen UI for #MelloLab
+- Fix out of bounds when using gestures with taskbar and desktop mode
+- Added support for multi window
+- Refine dock and all apps UI
+- Rework QSB and all apps search bar
+- Fix all apps SB's google icon touch detection
+- Show actual memory info without rounding up (now should show actual memory)
