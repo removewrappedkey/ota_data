@@ -1,57 +1,27 @@
-Note:
-- Disable windows blur for more smoother experience
-
 [DEVICE]
-- kernel: Merged latest linux patch v4.14.332
-- Boost scheduler during interaction
-- audio: Fix "Earpiece" audio output
+- kernel: Merged latest linux patch v4.14.334
+- Enable boost framework
+- Set lmkd's swap_free_low_percentage to 100
+- Set the compiler filter for shared apks to quicken
+- Updated viper4androidfx app to redesign v5.7 and it's blobs to v0.6.1 (support for A14 natively)
 
-[#melloderp] (Changes other than derpfest)
-- Hide ADB and developer setting enable status
-- Spoof current storage encryption status
-- Add support for application downgrade
-- Fix activity not finishing even after pressing back key
-- Default to 0 compression ratio
-- NotificationShade: Make blur crossfading more gradual
-- Show icon of package associated with Toast
-- Match legacy toast view with SystemUI
-- Tune AOSP QS Panel components and paddings
-- Added smart pixels under battery saver along with it's tile
-- Added a delete button to reset battery stats
-- Allow locking tasks to recents
-- Don't animate screen brightness when turning the screen on
-- Remove Unicode whitespace before AM/PM in the status bar
-- HWUI: move onSurfaceStatsAvailable to renderthread
-- Don't enable extra StrictMode features for userdebug builds
-- Fix system bootloop when no IME found
-- Granted many missing system permissions
-- Make freeform windows rounded
-- [WIP] Spoof locked bootloader on local attestations
-- Some UI changes
-- Settings: add animation to dark mode preference
-- Update sound, storage and charging illustration
-- Added MelloLauncher (former DerpLauncher)
-- More here ane there changes, I cannot mention
+[#melloderp]
+- Version upreved to Chapter2
+- Implemented and added Mello Spoofhack app to pass play integrity so that when google blocks current spoof, only update app is needed (no need to update whole build)
+- Added option in the lab to see current spoofed values to pass play integrity
+- Toast: Perform text scrolling for long toast texts
+- NavigationHandle: Don't show on keyguard or doze
+- StatusIconContainer: Shorten entry animations
+- Implement Split notification shade changes for A14 QPR1
+- Redesigned settingslib title
+- Adapt for monet privacy chip for A14 QPR1
+- Hide Network traffic on keyguard
+- Add optional haptic feedback on scrolling with fling gesture
+- Lockscreencharging: Added and adapted for A14 QPR1
+- Added and adapted for A14 QPR1 OOS style notification clear all button that was removed from source
+- Added MelloDerp Updater (former Derfest Updater)
+- Many more things I cannot mention all
 
-Changes from DerpLauncher:
-- Introduce memory info in recents app overview
-- Add toggle for memory info view
-- Introduce overview scrolling scale animation
-- Add Toasts for Apps Cleared
-- Add background chip for memory info view
-- Rework and optimize memory info
-- Open running services activity when clicking meminfo view
-- Vibrate effect for clear all button
-- Rework MeminfoView available ram calculation
-- Properly end recents animation views
-- Make recents rounded for devices without round screen
-- Vibrate on double tap to sleep
-- Rework recent apps UI/UX for QPR1
-- Allow locking tasks to recents
-- Redesigned and revamped recents screen UI for #MelloLab
-- Fix out of bounds when using gestures with taskbar and desktop mode
-- Added support for multi window
-- Refine dock and all apps UI
-- Rework QSB and all apps search bar
-- Fix all apps SB's google icon touch detection
-- Show actual memory info without rounding up (now should show actual memory)
+[base]
+- Merged December security patch QPR1
+- Removed some customisations for A14 QPR1

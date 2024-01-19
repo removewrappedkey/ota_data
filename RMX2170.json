@@ -1,11 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1703037638,
-      "filename": "MelloDerp-14-Chapter2-Beta-RMX2170-20231220-020435.zip",
-      "id": "a26962b2c071a7e5417a863171716f8d30f844f5c6576501900bbf8415a100c8",
-      "size": 1776376766,
-      "url": "https://sourceforge.net/projects/marshmello-projects/files/RMX2170/DerpFest/MelloDerp-14-Chapter2-Beta-RMX2170-20231220-020435.zip/download",
+      "datetime": 1703110380,
+      "filename": "MelloDerp-14-Chapter2-Beta-RMX2170-20231220-221309.zip",
+      "id": "2d714d1a84d08a4a0eff49985f45ed4a59a90d55049dff4a87352f60804d57a3",
+      "romtype": "Official",
+      "size": 1779932857,
+      "url": "https://sourceforge.net/projects/marshmello-projects/files/RMX2170/MelloDerp/MelloDerp-14-Chapter2-Beta-RMX2170-20231220-221309.zip/download",
       "version": "14"
     }
   ]
