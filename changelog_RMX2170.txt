@@ -1,27 +1,34 @@
 [DEVICE]
-- kernel: Merged latest linux patch v4.14.334
-- Enable boost framework
-- Set lmkd's swap_free_low_percentage to 100
-- Set the compiler filter for shared apks to quicken
-- Updated viper4androidfx app to redesign v5.7 and it's blobs to v0.6.1 (support for A14 natively)
+- Enable subtle tick vibration when revealing shelf
+- Override 'ro.product.first_api_level' on init
+- Don't compile SystemUITests
+- Sync up /system_ext properties with QSSI
+- Set dalvik heap configuration conditionally based on ram size
+- Correct SystemUI apk name and path for pinner service
+- Fix soc manufacturer and add soc model
+- Make dex2oat go fast for dex
+- Fix the device name showing in some apps "Realme Realme 7 Pro"
 
 [#melloderp]
-- Version upreved to Chapter2
-- Implemented and added Mello Spoofhack app to pass play integrity so that when google blocks current spoof, only update app is needed (no need to update whole build)
-- Added option in the lab to see current spoofed values to pass play integrity
-- Toast: Perform text scrolling for long toast texts
-- NavigationHandle: Don't show on keyguard or doze
-- StatusIconContainer: Shorten entry animations
-- Implement Split notification shade changes for A14 QPR1
-- Redesigned settingslib title
-- Adapt for monet privacy chip for A14 QPR1
-- Hide Network traffic on keyguard
-- Add optional haptic feedback on scrolling with fling gesture
-- Lockscreencharging: Added and adapted for A14 QPR1
-- Added and adapted for A14 QPR1 OOS style notification clear all button that was removed from source
-- Added MelloDerp Updater (former Derfest Updater)
-- Many more things I cannot mention all
-
-[base]
-- Merged December security patch QPR1
-- Removed some customisations for A14 QPR1
+- Redesigned, revamped settings homepage and about phone UI/UX
+- Added few widgets on settings homepage
+- Add toggle to enable/disable settings homepage widgets
+- Redesigned and improved Dark Mode preference inspired by realmeUI
+- Change settingsintelligence package name to google's
+- Add support for app signature spoofing
+- Catch IOException caused by invalid image
+- Update volume icons visibility after policy update
+- Added qs header images (total 108)
+- VolumeDialog: fix vibrate icon not showing on left volume dialog
+- Properly silence the opengl swap failure logspam of hwui
+- Add wifi standard icon feature
+- Don't apply onDarkChanged text color changes when sb chip is active
+- Implement exit app animation boost
+- Update exit app animation boost to sync with clo boost
+- Fix exception when retrieving target SDK version
+- Ensure updating margins and paddings on brightness slider
+- Fix black screen after DOZE
+- Show toast when clearing all apps
+- Implement transition scaling from motorola
+- Remove blur animation on app launch/exit for smoother experience
+- Prevent NPE with taskbar drag controller
