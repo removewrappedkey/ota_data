@@ -1,34 +1,60 @@
 [DEVICE]
-- Enable subtle tick vibration when revealing shelf
-- Override 'ro.product.first_api_level' on init
-- Don't compile SystemUITests
-- Sync up /system_ext properties with QSSI
-- Set dalvik heap configuration conditionally based on ram size
-- Correct SystemUI apk name and path for pinner service
-- Fix soc manufacturer and add soc model
-- Make dex2oat go fast for dex
-- Fix the device name showing in some apps "Realme Realme 7 Pro"
+- kernel: Merged latest linux patch v4.14.336
+- Added spatial audio
+- Override HDR types for dolby vision
+- Huge brightness changes
+- Fixed black screen on minimum brightness
+- Introduce force fast charge on usb2 mode in realme lab (currently available for only custom kernel mello oof mega omega kernel)
+- Target realme lab to current sdk and declare exported flags in it's manifest
+- Allow poweroffalarm app to access mnt_vendor_file
+- Build missing omx libs
+- Steal CarrierConfig from nothing phone 1
+- Enabled EIS and use EIS 2.0
+- More here-and-there under-the-hood changes
 
 [#melloderp]
-- Redesigned, revamped settings homepage and about phone UI/UX
-- Added few widgets on settings homepage
-- Add toggle to enable/disable settings homepage widgets
-- Redesigned and improved Dark Mode preference inspired by realmeUI
-- Change settingsintelligence package name to google's
-- Add support for app signature spoofing
-- Catch IOException caused by invalid image
-- Update volume icons visibility after policy update
-- Added qs header images (total 108)
-- VolumeDialog: fix vibrate icon not showing on left volume dialog
-- Properly silence the opengl swap failure logspam of hwui
-- Add wifi standard icon feature
-- Don't apply onDarkChanged text color changes when sb chip is active
-- Implement exit app animation boost
-- Update exit app animation boost to sync with clo boost
-- Fix exception when retrieving target SDK version
-- Ensure updating margins and paddings on brightness slider
-- Fix black screen after DOZE
-- Show toast when clearing all apps
-- Implement transition scaling from motorola
-- Remove blur animation on app launch/exit for smoother experience
-- Prevent NPE with taskbar drag controller
+- Version upreved to Chapter 3
+- udfps: Change window type to TYPE_DISPLAY_OVERLAY
+- VolumeDialog: Ensure proper resource release
+- VolumeDialog: Ensure proper resource release during configuration changes
+- Optimize notification expansion animation
+- Prevent OOB when reinflating QS panel with notifications
+- Updated mello spoofhack with new fingerprint (you can uninstall update of current mello spoofhack app)
+- perf: add exit app animation boost for apps exit
+- Improve system font overriding method
+- Override almost all apps with our system applied custom fonts
+- Fix list style alert dialog to use system font
+- Import default user profile avatars
+- Add more status bar clock background chips
+- Improve face unlock animation
+- Nuke oriented navbar handle
+- Install seccomp filter even if selinux is permissive
+- Disable automatic system server heap dumps by default
+- Reset QS on UI mode change (should fix improper color of qs header stuff)
+- Prevent crash with prebuilt camera metadata
+- Redesign lockscreen bottom buttons
+- Import breathing UDFPS animation from nothingOS
+- Animate StatusBarState doze transition using DarkAnimator
+- Avoid system crash when retrieving spatializer tracking mode
+- Added lab qs tile
+- Launch lab when long clicking qs footer settings
+- Renamed Lab, added new icon and added few more new summaries to it
+- Turn on whole program vtables for libbinder
+- Build libbinder with -O3
+- Enable AutoFDO for libbinder_ndk
+- Only prune non-pointer events
+- Reduce libbinder size by 30%, dirty memory by 43%
+- Fix some instance where launcher used to restart when not needed
+- Update QSB lens icon to 2023 edition
+- Do not tag meminfo visible if disabled
+- Do not display clone apps in launcher work tab
+- Enable ENABLE_APP_CLONING_CHANGES_IN_LAUNCHER
+- Apply material you palette to folder background
+- So many fixes, improvements for daily usage and under-the-hood changes I cannot mention all (kindly check changelog section in rom)
+
+[BASE]
+- Merged january security patch
+- FaceSense: Vibrate on successful authentication
+- usb: Show charging notification only if power brick is disconnected
+- SystemUI: Improve ripple animation color
+- More changes
